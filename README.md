@@ -11,5 +11,5 @@
 1. Play the music with speakers and place the product near the speakers
 2. Enjoy the visualization with different mode
 * Rhythmic Mode: Flashes LEDs to the beat of the music
-* Flow Mode: Move LED lights from left to right
+* Flow Mode: Move LED lights from left to right and back again
 
