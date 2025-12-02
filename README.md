@@ -3,7 +3,7 @@
 ## How to Set Up
 1. Connect the product to the Laptop with the USB cable
 2. Open maincode.ino with Arduino IDE
-3. Set the Board as Arduino Uno and the Port as COM3 Serial Port (USB)
+3. Set the Board as Arduino Uno and the Port of your environment
 4. Upload the code to the product.
 
 ## How to Use
