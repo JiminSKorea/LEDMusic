@@ -64,13 +64,13 @@ void loop() {
   if (mode == 0){
 
 
-    if (soundValue > lastSound + 100 && (millis() - lastBeat) > 400){
+    if (soundValue > lastSound + 50 && (millis() - lastBeat) > 400){
       lastBeat = millis();
 
       for (int i = 0; i < 5; i++){
       digitalWrite(ledPins[i], HIGH);
       }
-    
+
       delay(50);
 
       for (int i = 0; i < 5; i++){
@@ -79,14 +79,14 @@ void loop() {
     }
     
 
-    lastSound = soundValue;
+    
 
   }
 
   if (mode == 1){
 
 
-    if ((millis() - lastFlow) > 120){
+    if (soundValue > 100 &&(millis() - lastFlow) > 120){
       lastFlow = millis();
 
       for (int i = 0; i < 5; i++){
@@ -116,10 +116,12 @@ void loop() {
     }
 
   }
+
+  lastSound = soundValue;
 }
 
 // references
 //https://sensorkit.arduino.cc/sensorkit/module/lessons/lesson/06-the-sound-sensor 
 //https://projecthub.arduino.cc/krishna_agarwal/how-to-make-diy-music-reactive-led-using-arduino-illuminate-your-sound-4839be 
 //https://seeeddoc.github.io/Grove-Sound_Sensor/ 
-//https://ublearns.buffalo.edu/d2l/lms/dropbox/user/folder_user_view_feedback.d2l?db=239431&grpid=0&isprv=0&bp=0&ou=307491 
+//https://ublearns.buffalo.edu/d2l/lms/dropbox/user/folder_user_view_feedback.d2l?db=239431&grpid=0&isprv=0&bp=0&ou=307491  
